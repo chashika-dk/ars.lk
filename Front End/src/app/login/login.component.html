@@ -1,0 +1,40 @@
+<div class="back2">
+<mat-toolbar color="primary">
+    <img src="assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+     
+      <span>ars.lk</span>
+      <span class="example-spacer"></span>
+      <button mat-button (click)="openLogin()" >login</button>
+      
+    </mat-toolbar>
+
+            <div class="container">
+                <h1 class="first">Login to ars.lk</h1><br>
+                <h2 class="second">To post your own ad, To view ad, To view your account details<br> Please login to your ars.lk account</h2>
+                <div class="row">
+                  <div class="col"></div>
+                  <div class="col">
+                    <div class="example-container">
+                      <mat-form-field>
+                        <input matInput placeholder="Enter your email" [formControl]="email" required>
+                        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                      </mat-form-field>
+                      <mat-form-field>
+                        <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                      </mat-form-field>
+                      <button mat-raised-button color="primary">Login</button>
+                      <button mat-button color="warn">Forget password?</button>
+                    </div>
+                    
+                  </div>
+                  <div class="col"></div>
+                
+            </div>
+            </div>
+                
+
+                    
+</div>

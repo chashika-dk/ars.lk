@@ -1,0 +1,132 @@
+<div class="back2">
+  <mat-toolbar color="primary">
+    <img  src="assets/images/logo.png" width="30" height="30" class="d-inline-block" alt="">
+
+    <span class="example2">ars.lk</span>
+    <span class="example-spacer"></span>
+    <span class ="example1" >Signin</span>
+
+  </mat-toolbar>
+
+  <div class="container-fluid">
+    <h1 class="first">Sign up on ars.lk</h1>
+    <br>
+  
+    <div class="row">
+
+      <div class="col-sm-4">
+        <div class="example-container">
+          <h2 class="second">Fill your details</h2>
+          <mat-form-field>
+            <input matInput placeholder="NIC" required>
+            <mat-icon matSuffix>mode_edit</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput placeholder="Full Name" required>
+            <mat-icon matSuffix>mode_edit</mat-icon>
+          </mat-form-field>
+
+          <table class="example-full-width" cellspacing="0">
+            <tr>
+              <td>
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="First name">
+                  <mat-icon matSuffix>mode_edit</mat-icon>
+                </mat-form-field>
+
+              </td>
+              <td>
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Last Name">
+                  <mat-icon matSuffix>mode_edit</mat-icon>
+                </mat-form-field>
+              </td>
+            </tr>
+          </table>
+          <mat-form-field>
+            <input matInput placeholder="Home Address" required>
+            <mat-icon matSuffix>mode_edit</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>District</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let district of district" [value]="district.value">
+                {{district.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <form class="example-form">
+            <mat-form-field class="example-full-width">
+              <span matPrefix>+94 &nbsp;</span>
+              <input type="tel" matInput placeholder="Mobile Number">
+              <mat-icon matSuffix>mode_edit</mat-icon>
+            </mat-form-field>
+          </form>
+
+          <mat-form-field>
+            <input matInput placeholder="Profesion">
+            <mat-icon matSuffix>mode_edit</mat-icon>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Nearest University">
+            <mat-icon matSuffix>mode_edit</mat-icon>
+          </mat-form-field>
+        </div>
+
+      </div>
+      <div class="col-sm-4">
+        <img src="assets/images/house.webp" alt="Logo" width="500" height="333">
+
+      </div>
+      <div class="col-sm-4">
+        <div class="container">
+          <h2 class="second">Upload your photo</h2>
+          <form #imageForm=ngForm>
+
+            <!--  <input type="text" #Caption ngModel name="Caption" id="Caption">
+          <label for="Caption">Caption</label>-->
+            <img [src]="[imageURL]" style="width: 250px; height: 200px; ">
+            <input type="file" #Image accept="/image*" (change)="handleFileInput($event.target.files)">
+
+          </form>
+        </div>
+        <br>
+        <br>
+        <div class="outset">
+          <form class="example-form">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Email" [formControl]="emailFormControl">
+              <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                Please enter a valid email address
+              </mat-error>
+              <mat-error *ngIf="emailFormControl.hasError('required')">
+                Email is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+          </form>
+           <br>
+          <mat-form-field>
+            <input matInput placeholder="Password">
+            <mat-icon matSuffix>mode_edit</mat-icon>
+          </mat-form-field>
+          <br>
+          <mat-form-field>
+            <input matInput placeholder="Re-type Password">
+            <mat-icon matSuffix>mode_edit</mat-icon>
+          </mat-form-field>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  
+  <button mat-raised-button color="primary" type="submit" class="btn-large-btn-submit">Submit</button>
+  <button class="btn" mat-raised-button color="warn">Cancel</button>
+  
+  <br>
+  <br>
+</div>

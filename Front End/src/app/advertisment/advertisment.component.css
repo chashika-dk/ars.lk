@@ -1,0 +1,20 @@
+css
+.example-button-row {
+    display: table-cell;
+  }
+
+  .example-spacer {
+    flex: 1 2 auto;
+    
+  }
+  .example1{
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  .example2{
+    margin-top: 10px;
+  }
+  .example-container {
+    display: flex;
+    flex-direction: column;
+  }

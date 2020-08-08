@@ -1,0 +1,58 @@
+.example-button-row {
+    display: table-cell;
+  }
+
+  .example-spacer {
+    flex: 1 2 auto;
+  }
+  .back2{
+      background-color: #d8dce3;
+  }
+  .container{
+    background-color: floralwhite;
+    width: 1000px;
+    border: 15px solid rgb(40, 6, 63);
+    padding: 50px;
+    margin: auto;
+  }
+  .first{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 60px;
+  }
+  .second{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+  }
+  .example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+  .example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+  
+  .example-right-align {
+    text-align: right;
+  }
+  
+  input.example-right-align::-webkit-outer-spin-button,
+  input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+  input.example-right-align {
+    -moz-appearance: textfield;
+  }
+  

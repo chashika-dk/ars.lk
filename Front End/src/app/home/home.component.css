@@ -1,0 +1,43 @@
+.example-button-row {
+    display: table-cell;
+  }
+
+  .example-spacer {
+    flex: 1 2 auto;
+  }
+  .firstLine{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 60px;
+  }
+  .container-fluid{
+   margin-bottom: 80%;
+    background-color: floralwhite;
+    width: 1000px;
+    border: 15px solid rgb(40, 6, 63);
+    padding: 50px;
+    margin: auto;
+  }
+  .back{
+    background-color: #d5d7f0;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .secondLine{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+  }
+  .btn1{
+    margin: auto;
+    height: 80px;
+  width: 80%;
+  font: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  }
+ 
